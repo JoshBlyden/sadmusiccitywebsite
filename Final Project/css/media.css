@@ -63,10 +63,23 @@
         z-index: 7;
     }
 
+
     .linksAndCta .ctaMain {
         background: white;
         color:#0a2d67
     }    
+
+    .linksAndCta .ctaMain:hover {
+        background: white;
+        font-weight: bold;
+        color:#0a2d67
+        
+    }
+
+    .linksAndCta a:hover {
+       font-weight: bold;
+        color: white;
+    }
 
    .topRightNav #homepage {
         border-bottom: 1px solid white;
