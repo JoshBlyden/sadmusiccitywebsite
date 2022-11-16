@@ -1,0 +1,185 @@
+
+/* -------------------------------- 
+
+Form
+
+-------------------------------- */
+.sign-upForm {
+    max-width: 960px;
+    margin: 0 40px;
+}
+
+.explainpop {
+    display:flex;
+    justify-content: center;
+}
+
+.mainBackgrnd {
+background-color: grey;
+}
+
+
+.mainarea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 48px;
+    max-height: 325px;
+}
+
+fieldset {
+	border: 0;
+	margin: 24px 0;
+    max-width: 500px;
+}
+
+legend {
+
+}
+
+form div {
+  margin: 20px 0;
+}
+
+label {
+	display: block;
+	color: #94aab0;
+	margin-bottom: 4px;
+}
+
+.formheader {
+    margin: 16px 64px 16px 64px;
+    padding-top: 16px;
+}
+
+input,
+textarea,
+select,
+label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #2b3e51;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select,
+legend {
+  display: block;
+  font-size: 16px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  margin-bottom: 16px;
+    padding: 12px;
+  border: 1px solid #cfd9db;
+  background-color: #ffffff;
+  border-radius: .25em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2c97de;
+}
+
+.buttonarea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+textarea {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+}
+
+input[type="submit"] {
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px 8px 16px;
+    color: white;
+    background: #0a2d67;
+    font-size: 18px;
+    
+}
+
+input[type="submit"]:hover {
+  background: #0e6096;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+  background: #2b3e51;
+}
+
+input[type="submit"]:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/* -------------------------------- 
+
+Custom icons
+
+-------------------------------- */
+
+
+
+.btnBox {
+display: grid;
+grid-template-columns: 1fr 1fr;;
+margin-top: 0;
+padding-top: 0;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign {
+    background: #317544;
+    padding: 64px;
+    margin: 32px;
+    color: white;
+    max-width: 300px;
+    max-height: 150px;
+    border-radius: 16px;
+    border: 8px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign h1 {
+    font-size: 56px;
+    font-family: 'Arial Narrow', sans-serif;
+    min-width: 400px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    .sign p {
+        font-size: 24px;
+    }
+
+.popCount {
+    display: flex;
+    gap: 16px;
+}

@@ -1,0 +1,429 @@
+
+
+body {
+    font-family: sans-serif;
+}
+
+.container_fixed {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navLogo {
+    width: 96px;
+}
+
+/* Hero */
+
+.heroLander {
+    background-image: url(../images/backgrnd.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 128px 0;
+}
+
+iframe {
+    border-radius: 12px;
+}
+
+/* RECORD VINYL */
+
+.recordSize {
+  min-width: 75px;
+  max-width: 75px;
+}
+
+.recordClockwise {
+    animation: spinme 8s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes spinme {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .recordClockwise:hover {
+    animation: spinback 8s infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes spinback {
+    100% {
+      transform: rotate(0);
+    }
+    0% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .recorddissapear {
+   display:none;
+  }
+
+ 
+
+
+/* VINYL IDS */
+
+.vinylsAll {
+    z-index: 1;
+}
+
+#vinyl1 {
+    position: absolute;
+    bottom: 35%;
+    right: 12%;
+    cursor: pointer;
+    transform: translate(calc(-50% + +50px), calc(-50% + -25px));
+    transition: 2s linear;
+    z-index: 1;
+  }
+
+  #vinyl2 {
+    position: absolute;
+    bottom: 75%;
+    right: 34%;
+    cursor: pointer;
+    transform: translate(calc(-50% + -70px), calc(-50% + -25px));
+    transition: 2s linear;
+    z-index: 1;
+  }
+
+  #vinyl3 {
+    position: absolute;
+    bottom: 49%;
+    right: 39%;
+    cursor: pointer;
+    transform: translate(calc(-50% + -70px), calc(-50% + -25px));
+    transition: 2s linear;
+    z-index: 1;
+  }
+
+   #vinyl4 {
+    position: absolute;
+    bottom: 75%;
+    right: 75%;
+    cursor: pointer;
+    transform: translate(calc(-50% + -70px), calc(-50% + -25px));
+    transition: 2s linear;
+    z-index: 1;
+  }
+
+  #vinyl5 {
+    position: absolute;
+    bottom:39%;
+    right: 65%;
+    cursor: pointer;
+    transform: translate(calc(-50% + -70px), calc(-50% + -25px));
+    transition: 2s linear;
+    z-index: 1;
+  }
+
+
+  .heroOuterSection {
+    z-index: 2;
+  }
+
+.heroTxt {
+    padding: 24px;
+    width: 100%;
+    margin-left: 24px;
+    margin-right: 0;
+}
+
+.heroTxt h1 {
+    font-size: 96px;
+    padding: 0px;
+    margin: 0;
+    color: #0a2d67;
+}
+
+.heroTxt p {
+    font-size: 24px;
+    padding: 0px;
+    margin: 8px 0 40px 0;
+    color: #0a2d67;
+}
+
+
+/* Main CTA */
+
+.ctaMain {
+    border-radius: 100px;
+    background-color: #0a2d67;
+    padding: 8px 16px 8px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.ctaMain:hover {
+    background-color: #0e6096;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 56px 24px;
+    justify-self: center;
+}
+
+
+/* Main Left Column */
+
+.columnleft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articleNav {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 0;
+    margin-left: 0px;
+    padding-left: 0px;
+    justify-content: center;
+    margin-top: 0px;
+    height: 56px;
+    margin-bottom: 0;
+}
+
+.articleNav a {
+    color: black;
+    text-decoration: none;
+}
+
+.articleNav li {
+    list-style-type: none;
+}
+
+.navActive {
+    border-bottom-style: solid;
+    padding: 2px;
+    border-bottom-width: 1px;
+    font-weight: bold;
+}
+
+.navDeactive {
+    padding: 2px;
+    color: rgba(50,50,50,0.75);
+}
+
+.articleCardsColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.articleCard {
+    align-self: center;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(168, 168, 168);
+    border-bottom-width: 1px;
+    width: 450px;
+    margin-bottom: 32px;
+}
+
+.articleCard a {
+    text-decoration: none;
+}
+
+.articleCard a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+.articleHeaders {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.articleCard p {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.writerpic {
+    width: 32px;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+
+.articleDetails {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.articleDetails li {
+    list-style-type: none;
+    font-size: 10px;
+}
+
+.readtime {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.articleBtm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.profBackground {
+    background-color: grey;
+    border-radius: 100%;
+    padding: 0;  display: flex;
+    flex-direction: column;
+
+
+}
+
+/* IMAGES */
+
+.articleimgpreview {
+    width: 450px;
+    height: 360px;
+    border-radius: 8px;
+}
+
+/* MAIN COLUMN RIGHT */ 
+
+.feat_artist h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.feat_artist {
+    margin-top: 0;
+    padding-top: 0;
+    height: 56px;
+}
+
+.columnRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Articles NEWEST */
+
+
+.displayNone {
+    display: none;
+}
+
+
+/* ARTIST PAGE */ 
+
+.artistGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.artistCard a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+}
+
+
+.artistCardPhoto {
+    background-color: #0e6096;
+    height:150px;
+    width:275px;
+}
+
+
+/* Featured artist video */
+
+.featuredBtmRow {
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.viewMore a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.viewMore a {
+    color: #0a2d67;
+    text-decoration: none;
+}
+
+.viewMore a {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.viewMore a:hover {
+    border-bottom: 1px solid #0a2d67;
+}
+/* FOOTER */ 
+
+
+.copyright {
+    margin: 24px;
+}
+
+
+.footerLinks {
+    display: flex;
+    gap: 32px;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 48px;
+    padding: 0;
+    
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: black;
+}
+
+.smcFooter {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 24px;
+}
+
+.footerLinks a:hover {
+    color: #0a2d67;
+}
+
+
+.footerLinks a:active {
+    text-decoration: underline;
+}
+
+
+
